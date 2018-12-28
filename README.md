@@ -72,7 +72,7 @@ if (function_exists('get_files') && get_files(get_template_directory_uri() . get
 * 書き出し時「css、js」ファイルのgzipファイルを生成します。
 * サイトのdefine情報を「_config.json」に生成します。
 
-公開後に「https://公開ドメイン.com/generator.php」にアクセスすると、  
+公開後に「https://公開ドメイン/generator.php」にアクセスすると、  
 .htaccess、sitemap.xml、robots.txtが自動で生成されます。  
 .htaccessはエラーが出る場合がありますので、その都度調整してください。
 
