@@ -5,10 +5,10 @@ WordPressライクなHTMLジェネレーターです。
 そのままサーバーにアップしても使えます。
 
 ## 1. インストール
-ダウンロード後、「設置した場所（localhost）/hoge/」一度ブラウザでアクセスしてください。  
+ダウンロード後、「設置した場所（localhost）/hubhb/」一度ブラウザでアクセスしてください。  
 .httaccessが作られます。
 
-例）http://localhost/hoge/
+例）http://localhost/hubhb/
 
 ## 2. プロジェクトフォルダ
 /_projects/内にプロジェクトディレクトリを作成してください。  
@@ -25,16 +25,16 @@ WordPressライクなHTMLジェネレーターです。
 ---- /page02  
 ---- index.php  
 
-表示確認は「設置した場所（localhost）/hoge/プロジェクト名/」で確認できます。
+表示確認は「設置した場所（localhost）/hubhb/プロジェクト名/」で確認できます。
 
-例）http://localhost/hoge/project-01/
+例）http://localhost/hubhb/sample.com/
 
 ## 3. サイト設定について
 define.phpでサイトの設定ができます。  
 プロジェクト内のfunctions.phpに'set_define'を追加すればプロジェクトごとの設定がきます。
 
 ## 4. 関数
-関数については「/hoge/_includes/template/, /hoge/_includes/plugins/」の各ファイルを確認してください。  
+関数については「/hubhb/_includes/template/, /hubhb/_includes/plugins/」の各ファイルを確認してください。  
 プロジェクト内のfunctions.phpに追加すればプロジェクトごとの追加できます。（ WordPressと同じです）
 
 ## 5. テーマごとのカスタム
@@ -60,12 +60,12 @@ if (function_exists('get_files') && get_files(get_template_directory_uri() . get
 
 ## 6. 公開について
 ### htmlファイルの書き出し（静的サイト）
-設置した場所（localhost）/hoge/プロジェクト名/html  
+設置した場所（localhost）/hubhb/プロジェクト名/html  
 上記にアクセスすると公開ファイルが日付ごとに書き出されます。  
 同じ日に書き出された場合は上書きされます。
 
-例）http://localhost/hoge/project-01/html  
-例）http://localhost/hoge/project-01/dist/project-01-20180101
+例）http://localhost/hubhb/sample.com/html  
+例）http://localhost/hubhb/sample.com/dist/sample.com-20180101
 
 * 拡張子は.phpです。
 * 書き出し時にimgタグに自動でwidth, height, 画像があればsrcsetなどの属性をセット。  制作時は重くなるので書き出し時のみに実行
@@ -77,7 +77,7 @@ if (function_exists('get_files') && get_files(get_template_directory_uri() . get
 .htaccessはエラーが出る場合がありますので、その都度調整してください。
 
 ### phpファイルの書き出し（動的サイト）
-設置した場所（localhost）/hoge/プロジェクト名/php  
+設置した場所（localhost）/hubhb/プロジェクト名/php  
 上記にアクセスすると公開ファイルが日付ごとに書き出されます。  
 同じ日に書き出された場合は上書きされます。
 
