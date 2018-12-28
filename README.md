@@ -14,7 +14,7 @@ WordPressライクなHTMLジェネレーターです。
 /_projects/内にプロジェクトディレクトリを作成してください。  
 基本はWordPressと同じです。
 
-### projets-name
+### sample.com
 
 -- header.php  
 -- footer.php  
